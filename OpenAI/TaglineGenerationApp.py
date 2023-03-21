@@ -1,7 +1,8 @@
 import streamlit as st
 import openai
 
-openai.api_key = "YOUR API KEY"
+openai.api_key = st.secrets["api_key"]
+#"YOUR API KEY"
 
 st.header('Tagline Generation App')
 st.text('(Powered by GPT-3 Model)')
